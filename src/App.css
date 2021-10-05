@@ -1,3 +1,24 @@
+.App {
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+.profile {
+    color: #4c566a;
+}
+
+.logo {
+    color: #2e3440;
+    margin-left: 2rem;
+}
+
 .feed {
     width: 75%;
     margin: 2% auto;
@@ -8,20 +29,48 @@
     margin: 0 auto;
 }
 
-.navbar {
+.tag {
+    font-size: 0.9rem;
+}
+
+.date, 
+.location,
+.location-icon {
+    font-size: 0.8rem;
+}
+
+.css {
+    color: #563D7C;
+}
+
+.python {
+    color: #3572A5;
+}
+
+.filters {
+    width: 60%;
+    margin: 2% auto;
+}
+
+.dropdown > .btn {
+    width: 10rem;
+    font-size: 0.8rem;
+    border-radius: 8rem;
+    background-color: #eceff4dd;
+}
+
+#dropdownMenuButton1 {
+    color: #2e3440;
+}
+
+.btn-secondary {
     background-color: #434C5E;
 }
 
-.profile {
-    color: #ffffff;
+.filters-row {
+    margin-bottom: 1%;
 }
 
-.logo {
-    color: #ffffff;
-}
-
-.tag {
-    border: 0.5px solid gray;
-    border-radius: 5rem;
-    padding: 0 0.5rem;
+.form-check-label {
+    font-size: 0.8rem;
 }
