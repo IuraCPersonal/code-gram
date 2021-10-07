@@ -12,7 +12,14 @@ function App() {
         <div className="filters">
           <Filters />
         </div>
-        <Post />
+        <Post 
+          title="Python AI" 
+          user="John Fish" 
+          location="Moldova" 
+          date="Nov 12"
+          description="Face Recognition AI using CV."  
+          tags={["CSS", "Python", "Go", "R", "Swift", "C#", "C++"]}
+        />
         <Post />
         <Post />
       </div>

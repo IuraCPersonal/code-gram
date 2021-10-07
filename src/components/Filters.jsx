@@ -15,13 +15,13 @@ class Filters extends Component {
                             <div class="form-check m-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Default checkbox
+                                    Looking for a project
                                 </label>
                             </div>
                             <div class="form-check m-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                                 <label class="form-check-label" for="flexCheckChecked">
-                                    Checked checkbox
+                                    Hire a programmer
                                 </label>
                             </div>
                             </li>
@@ -32,19 +32,63 @@ class Filters extends Component {
                             Date <FaChevronDown />
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Today
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    This week
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    This month
+                                </label>
+                            </div>
                         </ul>
                     </div>
                     <div className="dropdown">
                         <button className="btn d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Location <FaChevronDown />
                         </button>
-                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <ul className="dropdown-menu mt-1" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Moldova
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    USA
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Germany
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Russia
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Canada
+                                </label>
+                            </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -54,9 +98,67 @@ class Filters extends Component {
                             Language <FaChevronDown />
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Python
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                JavaScript
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Java     
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                C#
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                C
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                C++
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Go
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                R
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Swift
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                PHP
+                                </label>
+                            </div>
+
                         </ul>
                     </div>
                     <div className="dropdown">
@@ -64,9 +166,30 @@ class Filters extends Component {
                             Experience <FaChevronDown />
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Beginner
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Junior
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Middle
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Senior
+                                </label>
+                            </div>
                         </ul>
                     </div>
                     <div className="dropdown">
@@ -74,9 +197,37 @@ class Filters extends Component {
                             Field <FaChevronDown />
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Front End
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Back End
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Data Scientist
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Game Dev
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                DataBase Admin
+                                </label>
+                            </div>
+
                         </ul>
                     </div>
                 </div>
