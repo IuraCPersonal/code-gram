@@ -1,4 +1,5 @@
 .App {
+<<<<<<< HEAD
     background-color: #ffffff;
   }
   
@@ -106,3 +107,112 @@
   .form-check-label {
     font-size: 0.8rem;
   }
+=======
+  background-color: #ffffff;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.profile {
+  color: #4c566a;
+}
+
+.logo {
+  color: #2e3440;
+  margin-left: 2rem;
+}
+
+.feed {
+  width: 75%;
+  margin: 2% auto;
+}
+
+.feed > .col-md-5 {
+  width: 30em;
+  margin: 0 auto;
+}
+
+.tag {
+  font-size: 0.9rem;
+}
+
+.date,
+.location,
+.location-icon {
+  font-size: 0.8rem;
+}
+
+.python {
+  color: #3572a5;
+}
+
+.javaScript {
+  color: #f1e05a;
+}
+
+.java {
+  color: #b07219;
+}
+
+.csharp {
+  color: #178600;
+}
+
+.c {
+  color: #555555;
+}
+
+.cplus {
+  color: #f34b7d;
+}
+
+.go {
+  color: #00add8;
+}
+
+.r {
+  color: #198ce7;
+}
+
+.swift {
+  color: #f05138;
+}
+
+.php {
+  color: #4f5d95;
+}
+
+.filters {
+  width: rem 1;
+  margin: 2% auto;
+}
+
+.dropdown > .btn {
+  width: 10rem;
+  font-size: 0.8rem;
+  border-radius: 8rem;
+  background-color: #eceff4dd;
+}
+
+#dropdownMenuButton1 {
+  color: #2e3440;
+}
+
+.btn-secondary {
+  background-color: #434c5e;
+}
+
+.filters-row {
+  margin-bottom: 1%;
+}
+
+.form-check-label {
+  font-size: 0.8rem;
+}
+>>>>>>> ad99aaf8c9c8adf86a40c1dc2f2275c252ef5715
