@@ -15,6 +15,7 @@ const Posts = (props) => {
                         date={month + " " + day}
                         bio={item.bio}
                         key={index.toString()}
+                        tags={item.tags}
                     />
                 )
             })}

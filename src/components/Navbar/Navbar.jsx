@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <nav className="navbar sticky-top navbar-light">
-            <div className="container-fluid">
+            <div className="d-flex container-fluid justify-content-between">
                 <a className="nav-item nav-link active" href="#">
                     <span className="logo"><span className="logo-code">&lt;code&gt;</span>gram</span>
                 </a>

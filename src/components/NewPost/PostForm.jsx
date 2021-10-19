@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { MultiSelect } from 'react-multi-select-component';import './PostForm.css';
+import { MultiSelect } from 'react-multi-select-component';
+import Select from 'react-select';
+import './PostForm.css';
 
 const PostForm = (props) => {
     const [title, setTitle] = useState('');
@@ -8,10 +10,15 @@ const PostForm = (props) => {
     const [bio, setBio] = useState('');
     const [tags, setTags] = useState([]);
 
-    const options = [
+    const optionsTags = [
         {label: 'C++', value: 'C++'},
         {label: 'Python', value: 'Python'},
         {label: 'C#', value: 'C#'}
+    ]
+
+    const optionsLocation = [
+        {label: 'Moldova', value: 'Moldova'},
+        {label: 'France', value: 'France'}
     ]
 
     const titleChangeHandler = (event) => {
@@ -36,13 +43,14 @@ const PostForm = (props) => {
             bio: bio,
             tags: tags
         }
-
+        
         props.onAddPost(newPostData);
+  
         setTitle('');
         setLocation('');
         setDate('');
         setBio('');
-        setTags('');
+        setTags([]);
     }
 
     return (
@@ -59,24 +67,19 @@ const PostForm = (props) => {
                 </div>
                 <div className="new-post__control">
                     <label>Location</label>
-                    <select 
-                        required
-                        onChange={locationChangeHandler}
-                        placeholder="Select.."
-                        className="post__dropdown"
-                    >
-                        <option value="" disabled selected hidden>Select your option</option>
-                        <option value="Moldova">Moldova</option>
-                        <option value="France">France</option>
-                        <option value="Italy">Italy</option>
-                        
-                    </select>
+                    <Select 
+                        className="post__multiselect"
+                        options={optionsLocation}
+                        value={location}
+                        onChange={setLocation}
+                        labelledBy="Select"
+                    />
                 </div>
                 <div className="post__tags">
                     <label>Tags</label>
                     <MultiSelect 
                         className="post__multiselect"
-                        options={options}
+                        options={optionsTags}
                         value={tags}
                         onChange={setTags}
                         labelledBy="Select"

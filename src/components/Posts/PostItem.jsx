@@ -1,13 +1,11 @@
 import React from 'react';
 import { IoLocationSharp } from "react-icons/io5";
+import { BsFillCalendarCheckFill } from "react-icons/bs"
 import { FaCircle } from "react-icons/fa";
 import { HiDotsVertical } from "react-icons/hi";
-import Card from '../UI/Card';
 import './PostItem.css';
 
 const PostItem = (props) => {
-    const tags = ["CSS", "Python"];
-
     return (
         <div className="">
             <div className="flex-md-row mb-4 box-shadow h-md-250">
@@ -21,16 +19,17 @@ const PostItem = (props) => {
                     </h5>
                     <div className="d-flex flex-row align-items-center">
                         <IoLocationSharp className="me-1 location-icon" />
-                        <div className="me-1 text-muted location">{props.location} |</div>
+                        <div className="me-2 text-muted location">{props.location.value}</div>
+                        <BsFillCalendarCheckFill className="me-1 location-icon" />
                         <div className="me-1 text-muted date">{props.date}</div>
                     </div>
                     <p className="card-text mb-auto">{props.bio}</p>
                     <div className="d-flex justify-content-start">
-                        {tags.map((item, index) => {
+                        {props.tags.map((item, index) => {
                             return (
                                 <div className="d-flex align-items-center me-2" key={index.toString()}>
-                                    <FaCircle className={"me-1 tag " + item.toLowerCase()} />
-                                    <div>{item}</div>
+                                    <FaCircle className={"me-1 tag " + item.value.toLowerCase()} />
+                                    <div>{item.value}</div>
                                 </div>
                             )
                         })}
