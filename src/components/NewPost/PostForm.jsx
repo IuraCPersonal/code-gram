@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import './PostForm.css';
+import { MultiSelect } from 'react-multi-select-component';import './PostForm.css';
 
 const PostForm = (props) => {
     const [title, setTitle] = useState('');
     const [location, setLocation] = useState('');
     const [date, setDate] = useState('');
     const [bio, setBio] = useState('');
-    const [tags, setTags] = useState('');
+    const [tags, setTags] = useState([]);
+
+    const options = [
+        {label: 'C++', value: 'C++'},
+        {label: 'Python', value: 'Python'},
+        {label: 'C#', value: 'C#'}
+    ]
 
     const titleChangeHandler = (event) => {
         setTitle(event.target.value);
@@ -16,16 +22,8 @@ const PostForm = (props) => {
         setLocation(event.target.value);
     }
 
-    const dateChangeHandler = (event) => {
-        setDate(event.target.value);
-    }
-
     const bioChangeHandler = (event) => {
         setBio(event.target.value);
-    }
-
-    const tagsChangeHandler = (event) => {
-        setTags(event.target.value);
     }
 
     const submitHandler = (event) => {
@@ -34,7 +32,7 @@ const PostForm = (props) => {
         const newPostData = {
             title: title,
             location: location,
-            date: new Date(date),
+            date: new Date(),
             bio: bio,
             tags: tags
         }
@@ -53,6 +51,7 @@ const PostForm = (props) => {
                 <div className="new-post__control">
                     <label>Title</label>
                     <input
+                        required
                         type="text"
                         value={title}
                         onChange={titleChangeHandler}
@@ -60,24 +59,33 @@ const PostForm = (props) => {
                 </div>
                 <div className="new-post__control">
                     <label>Location</label>
-                    <input
-                        type="text"
-                        value={location}
+                    <select 
+                        required
                         onChange={locationChangeHandler}
-                    />
+                        placeholder="Select.."
+                        className="post__dropdown"
+                    >
+                        <option value="" disabled selected hidden>Select your option</option>
+                        <option value="Moldova">Moldova</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                        
+                    </select>
                 </div>
-                <div className="new-post__control">
-                    <label>Date</label>
-                    <input
-                        type="date"
-                        value={date}
-                        onChange={dateChangeHandler}
-                        min="2019-01-01" max="2022-12-31"
+                <div className="post__tags">
+                    <label>Tags</label>
+                    <MultiSelect 
+                        className="post__multiselect"
+                        options={options}
+                        value={tags}
+                        onChange={setTags}
+                        labelledBy="Select"
                     />
                 </div>
                 <div className="new-post__control">
                     <label>About</label>
                     <input
+                        required
                         type="text"
                         value={bio}
                         onChange={bioChangeHandler}

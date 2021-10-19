@@ -6,7 +6,8 @@
   text-align: left;
 }
 
-.new-post__control label {
+.new-post__control label,
+.post__tags label {
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
@@ -44,4 +45,17 @@
 .new-post__actions > button:hover {
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
     7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+
+.post__dropdown {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 15rem;
+    background: transparent;
+}
+
+.post__multiselect {
+    width: 15rem;
 }

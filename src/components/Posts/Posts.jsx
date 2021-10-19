@@ -10,6 +10,7 @@ const Posts = (props) => {
                 return (
                     <PostItem
                         title={item.title}
+                        user={'John Smith'}
                         location={item.location}
                         date={month + " " + day}
                         bio={item.bio}
