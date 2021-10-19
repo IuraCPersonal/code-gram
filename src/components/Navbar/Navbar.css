@@ -1,0 +1,25 @@
+.navbar {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+.profile {
+    color: #4c566a;
+}
+
+.profile:hover {
+    color: #2E3440;
+}
+
+.logo {
+    color: #2e3440;
+    font-size: 1.3rem;
+}
+
+.logo-code {
+    color: #5E81AC;
+}
