@@ -10,19 +10,22 @@ const AddPost = (props) => {
     setToggleForm(!toggleForm);
   }
 
-   return (
-        <div className="d-flex flex-column">
-            <div className="add__post" onClick={formHandler}>
-                <AiOutlineAppstoreAdd />
-            </div>
-            <div className="post__form">
-                {toggleForm && (
-                  <PostForm onAddPost={props.onAddPost}/>
-                )}
-            </div>
-       </div>
+  return (
+    <div className="container">
+      <div className="add__post" onClick={formHandler}>
+        <AiOutlineAppstoreAdd />
+      </div>
+      <div className="post__form">
+        {toggleForm && (
+          <PostForm
+            onAddPost={props.onAddPost}
+            setToggleForm={setToggleForm}
+          />
+        )}
+      </div>
+    </div>
 
-   );
+  );
 };
 
 export default AddPost;

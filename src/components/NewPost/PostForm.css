@@ -51,14 +51,14 @@
 }
 
 .post__dropdown {
-    font: inherit;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    width: 15rem;
-    background: transparent;
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 15rem;
+  background: transparent;
 }
 
 .post__multiselect {
-    width: 15rem;
+  width: 15rem;
 }

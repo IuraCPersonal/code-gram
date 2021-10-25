@@ -11,12 +11,12 @@ const PostItem = (props) => {
             <div className="flex-md-row mb-4 box-shadow h-md-250">
                 <div className="card-body d-flex flex-column post">
                     <div className="d-flex justify-content-between">
-                        <h3 className="text-decoration-none text-dark" href="#">{props.title}</h3>
+                        <h5 className="text-decoration-none text-dark" href="#">{props.title}</h5>
                         <div className="me-1"><HiDotsVertical /></div>
                     </div>
-                    <h5>
+                    <h6>
                         <a>{props.user}</a>
-                    </h5>
+                    </h6>
                     <div className="d-flex flex-row align-items-center">
                         <IoLocationSharp className="me-1 location-icon" />
                         <div className="me-2 text-muted location">{props.location.value}</div>

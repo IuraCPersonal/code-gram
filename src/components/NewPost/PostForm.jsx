@@ -6,27 +6,22 @@ import './PostForm.css';
 const PostForm = (props) => {
     const [title, setTitle] = useState('');
     const [location, setLocation] = useState('');
-    const [date, setDate] = useState('');
     const [bio, setBio] = useState('');
     const [tags, setTags] = useState([]);
 
     const optionsTags = [
-        {label: 'C++', value: 'C++'},
-        {label: 'Python', value: 'Python'},
-        {label: 'C#', value: 'C#'}
+        { label: 'C++', value: 'C++' },
+        { label: 'Python', value: 'Python' },
+        { label: 'C#', value: 'C#' }
     ]
 
     const optionsLocation = [
-        {label: 'Moldova', value: 'Moldova'},
-        {label: 'France', value: 'France'}
+        { label: 'Moldova', value: 'Moldova' },
+        { label: 'France', value: 'France' }
     ]
 
     const titleChangeHandler = (event) => {
         setTitle(event.target.value);
-    }
-
-    const locationChangeHandler = (event) => {
-        setLocation(event.target.value);
     }
 
     const bioChangeHandler = (event) => {
@@ -43,12 +38,12 @@ const PostForm = (props) => {
             bio: bio,
             tags: tags
         }
-        
+
         props.onAddPost(newPostData);
-  
+        props.setToggleForm(false);
+
         setTitle('');
         setLocation('');
-        setDate('');
         setBio('');
         setTags([]);
     }
@@ -67,7 +62,7 @@ const PostForm = (props) => {
                 </div>
                 <div className="new-post__control">
                     <label>Location</label>
-                    <Select 
+                    <Select
                         className="post__multiselect"
                         options={optionsLocation}
                         value={location}
@@ -77,7 +72,7 @@ const PostForm = (props) => {
                 </div>
                 <div className="post__tags">
                     <label>Tags</label>
-                    <MultiSelect 
+                    <MultiSelect
                         className="post__multiselect"
                         options={optionsTags}
                         value={tags}

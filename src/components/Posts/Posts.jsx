@@ -17,7 +17,7 @@ const Posts = (props) => {
                         key={index.toString()}
                         tags={item.tags}
                     />
-                )
+                );
             })}
         </div>
     )

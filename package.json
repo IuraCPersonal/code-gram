@@ -17,6 +17,7 @@
     "react-multi-select-component": "^4.1.13",
     "react-scripts": "4.0.3",
     "react-select": "^5.1.0",
+    "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
