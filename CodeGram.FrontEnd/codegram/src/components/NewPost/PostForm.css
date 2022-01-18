@@ -27,6 +27,7 @@
 
 .new-post__actions {
   text-align: right;
+  margin: 2rem;
 }
 
 .new-post__actions > button {
