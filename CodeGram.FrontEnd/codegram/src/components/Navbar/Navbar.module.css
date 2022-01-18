@@ -1,0 +1,75 @@
+.container {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar {
+  max-width: 100%;
+  padding: unset;
+  height: 5em;
+  margin: 0 auto;
+  /* min-height: 8vh; */
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  background-color: transparent;
+}
+
+.navbar__profile {
+  color: #4c566a;
+}
+
+.navbar__profile:hover {
+  color: #2e3440;
+}
+
+.navbar__logo {
+  color: #2e3440;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.navbar__logo__code {
+  color: #5e81ac;
+  font-family: "Inconsolata", monospace;
+}
+
+.navbar__logo__gram {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: "24px 48px";
+};
+
+.flexContainer {
+  display: "flex";
+  align-items: "center";
+};
+
+.rightItemContainer {
+  margin-left: "auto";
+};
+
+.gridItem {
+  padding: "12px";
+};
+
+.imgLogo {
+  vertical-align: "middle";
+  width: "85px";
+};
+
+.postAJob {
+  margin-left: "20px";
+};
+
+.action {
+  color: black;
+  text-transform: lowercase;
+}
