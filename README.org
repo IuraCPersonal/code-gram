@@ -1,0 +1,16 @@
+#+TITLE: CODEGRAM
+#+AUTHOR: FCIM FAF 203 Cius Iurie
+
+** 👋 TABLE OF CONTENTS :toc:
+  - [[#-introduction][📑 INTRODUCTION]]
+  - [[#-contact][📮 CONTACT]]
+
+** 📑 INTRODUCTION
+
+*** About this Repository
+
+This repository contains the Front End for the =CodeGram= application developed during the =PBL= course.
+
+** 📮 CONTACT
+
+If you have any question, please contact me through email: =iurie.cius@isa.utm.md=.
